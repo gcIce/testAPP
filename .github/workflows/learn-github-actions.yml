@@ -2,7 +2,7 @@ name: Feishu Bot
 
 on:
   schedule:
-    - cron: "10 2 * * *"   # UTC 02:10 = 北京时间 10:10
+    - cron: "20 2 * * *"   # UTC 02:10 = 北京时间 10:10
 
 jobs:
   send-msg:
@@ -16,4 +16,4 @@ jobs:
               "msg_type": "text",
               "content": { "text": "测试消息" }
             }' \
-            https://open.feishu.cn/open-apis/bot/v2/hook/93443fc4-74ed-4b1e-84a0-c8ebbd4914ae
+            https://open.feishu.cn/open-apis/bot/v2/hook/890a2172-a5e1-4fc3-ba88-be37cf2994e9
