@@ -2,7 +2,7 @@ name: Feishu Bot
 
 on:
   schedule:
-    - cron: "45 7 * * *"  # UTC 02:10 = 北京时间 10:10
+    - cron: "00 3 * * *"  # UTC 02:10 = 北京时间 10:10
 
 jobs:
   send-msg:
