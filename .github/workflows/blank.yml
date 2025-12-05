@@ -14,6 +14,6 @@ jobs:
             -H "Content-Type: application/json" \
             -d '{
               "msg_type": "text",
-              "content": { "text": "定时提醒：任务运行中" }
+              "content": { "text": "定时提醒：谷歌上架【连续不间断】14天打卡" }
             }' \
             https://open.feishu.cn/open-apis/bot/v2/hook/93443fc4-74ed-4b1e-84a0-c8ebbd4914ae
