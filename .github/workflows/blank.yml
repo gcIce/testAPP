@@ -1,0 +1,19 @@
+name: Feishu Bot
+
+on:
+  schedule:
+    - cron: "30 7 * * *"  # UTC 02:10 = 北京时间 10:10
+
+jobs:
+  send-msg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send to Feishu Bot
+        run: |
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            -d '{
+              "msg_type": "text",
+              "content": { "text": "定时提醒：任务运行中" }
+            }' \
+            https://open.feishu.cn/open-apis/bot/v2/hook/93443fc4-74ed-4b1e-84a0-c8ebbd4914ae
